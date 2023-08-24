@@ -4,7 +4,7 @@ CREATE TABLE SpotifyClone.planos(
     id_plano INT AUTO_INCREMENT PRIMARY KEY,
     nome_plano VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2) NOT NULL
-) engine = InnoDB;
+) ENGINE = InnoDB;
 INSERT INTO SpotifyClone.planos (nome_plano, preco)
 VALUES
   ('Plano Gratuito', 0.00),
@@ -33,15 +33,15 @@ VALUES
   ('Nina Simone');
 
   INSERT INTO SpotifyClone.usuarios (nome_usuario, idade, id_plano, data_assinatura) VALUES
-	('Barbara  Liskov', '82', '1', '2019-10-20'),
+	('Barbara Liskov', '82', '1', '2019-10-20'),
 	('Robert Cecil Martin', '58', '1', '2017-01-06'),
 	('Ada Lovelace', '37', '4', '2017-12-30'),
-	('Martin  Fowler', '46', '4', '2017-01-17'),
+	('Martin Fowler', '46', '4', '2017-01-17'),
 	('Sandi Metz', '58', '4', '2018-04-29'),
 	('Paulo Freire', '19', '2', '2018-02-14'),
 	('Bell Hooks', '26', '2', '2018-01-05'),
 	('Christopher Alexander', '85', '3', '2019-06-05'),
-	('Judith  Butler', '45', '3', '2020-05-13'),
+	('Judith Butler', '45', '3', '2020-05-13'),
 	('Jorge Amado', '58', '3', '2017-02-17');
 CREATE TABLE SpotifyClone.albuns (
     id_album INT AUTO_INCREMENT PRIMARY KEY,
